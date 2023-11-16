@@ -6,7 +6,9 @@ Has over 150+ features Resolver, Anti Aimviewer, Frame Skipper, Uwp Optimizer ( 
 
 Can also use for blatant and has rage features ( Anti flame and more )
 
-We dont take or sell user logs only hwid and key and discord user
+We dont take or sell our users logs only hwid and key and discord user
+
+Impossible to get caught in clips many people got fooled with it
 
 # Features
 
