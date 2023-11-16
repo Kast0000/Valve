@@ -1,8 +1,11 @@
-# Valve
+ # Valve
 
 One of the best cheats out there for a cheap price
-Has over 150+ features Resolver, Anti Aimviewer, Frame Skipper, Uwp Optimizer ( Makes Frames Like Web Roblox ) and other cool stuff
-Can also use for blatant and has rage features ( Anti Flame And More )
+
+Has over 150+ features Resolver, Anti Aimviewer, Frame Skipper, Uwp Optimizer ( Makes frame like web roblox ) and other cool stuff
+
+Can also use for blatant and has rage features ( Anti flame and more )
+
 We dont take user logs only hwid and key and discord user
 
 # Features
