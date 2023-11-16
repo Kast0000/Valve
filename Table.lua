@@ -52,15 +52,15 @@ getgenv().Valve = {
             ['Key'] = ("L"), 
             ['Type'] = "Disconnect", -- // Disconnect And CustomPanic
             ['CustomPanic'] = { -- // WIP
-                ['PanicSilentAim'] = (true),
-                ['PanicAimAssist'] = (false),
-                ['PanicSilentAimFOV'] = (true),
-                ['PanicAimAssistFOV'] = (true),
-                ['PanicSilentAimResolver'] = (true),
-                ['PanicAimAssistResolver'] = (false),
-                ['PanicAntiAimViewer'] = (false),
-                ['PanicMemorySpoofer'] = (false),
-                ['PanicNetworkReceive'] = (false),
+                ['Panic SilentAim'] = (true),
+                ['Panic AimAssist'] = (false),
+                ['Panic SilentAim FOV'] = (true),
+                ['Panic AimAssist FOV'] = (true),
+                ['Panic SilentAim Resolver'] = (true),
+                ['Panic AimAssist Resolver'] = (false),
+                ['Panic Anti AimViewer'] = (false),
+                ['Panic Memory Spoofer'] = (false),
+                ['Panic Network Receive'] = (false),
         },
     },
     PanicWhenAntiLock = { -- // Disables Silent Aim Or AimAssist On Anti
@@ -72,7 +72,7 @@ getgenv().Valve = {
         AimAssist = { -- // AimAssist
             ['Enabled'] = (false),
             ['X Offset'] = (37),
-            ['Y Offset'] = (-21),
+                 ['Y Offset'] = (-21),
             },
         },
     },
@@ -133,7 +133,7 @@ getgenv().Valve = {
     Shake = {
         ['Enabled'] = (false),
         ['Shake'] = (1),
-        ['Akis'] = (false), -- // WIP
+        ['Axis'] = (false), -- // WIP
         ['X'] = (0), -- // WIP
         ['Y'] = (0), -- // WIP
         ['Z'] = (0), -- // WIP
@@ -147,21 +147,20 @@ getgenv().Valve = {
     FOV = { -- // The Visible Isnt That Accurate Working On To Fix
         AimAssist = {
             ['Visible'] = (false),
-            ['FOVRadius'] = (120),
+            ['FOVRadius'] = (100),
             ['Disable_Out_Side_Of_FOV'] = (true),
+            ['Position'] = ("Cursor"), -- // Cursor And Follow Follow Is WIP
             ['Filled'] = (false),
-            ['Sides'] = (25),
             ['Thickness'] = (1),
             ['Transparency'] = (1),
             ['Color'] = Color3.fromRGB(171, 4, 4)
         },
         SilentAim = {
             ['Visible'] = (true),
-            ['FOVRadius'] = (27),
+            ['FOVRadius'] = (50),
             ['Disable_Out_Side_Of_FOV'] = (true),
             ['Position'] = ("Cursor"), -- // Cursor And Follow Follow Is WIP
             ['Filled'] = (false),
-            ['Sides'] = (40),
             ['Thickness'] = (2),
             ['Transparency'] = (2),
             ['Color'] = Color3.fromRGB(171, 4, 4)
@@ -169,38 +168,30 @@ getgenv().Valve = {
     },
     Checks = {
         AimAssist = {
-            ['WallCheck'] = (true),
-            ['KOCheck'] = (true),
-            ['FriendCheck'] = (false),
-            ['TeamCheck'] = (false),
-            ['PlayerVisibleCheck'] = (true),
-            ['GrabbedCheck'] = (true),
-            ['CrewCheck'] = (false),
-            ['ForceFieldCheck'] = (false),
-            ['AliveCheck'] = (false),
+            ['Wall Check'] = (true),
+            ['KO Check'] = (true),
+            ['Friend Check'] = (false),
+            ['Team Check'] = (false),
+            ['Visible Check'] = (true),
+            ['Grabbed Check'] = (true),
+            ['Crew Check'] = (false),
         },
         SilentAim = {
-            ['WallCheck'] = (true),
-            ['KOCheck'] = (true),
-            ['FriendCheck'] = (false),
-            ['TeamCheck'] = (false),
-            ['PlayerVisibleCheck'] = (true),
-            ['GrabbedCheck'] = (true),
-            ['CrewCheck'] = (false),
-            ['ForceFieldCheck'] = (false),
-            ['AliveCheck'] = (false),
+            ['Wall Check'] = (true),
+            ['KO Check'] = (true),
+            ['Friend Check'] = (false),
+            ['Team Check'] = (false),
+            ['Visible Check'] = (true),
+            ['Grabbed Check'] = (true),
+            ['Crew Check'] = (false),
         }
     },
     Resolver = { -- // Resolver
         ["SilentAim"] = { -- // This Is For Silent Aim
             ['Enabled'] = (false),  -- // Resolves AA
-            ['XOffset'] = (24),
-            ['YOffset'] = (-14),
         },
         ["AimAssist"] = { -- // This Is For AimAssist
             ['Enabled'] = (true), -- // Resolves AA
-            ['XOffset'] = (24),
-            ['YOffset'] = (-14),
         },
     },
     Spoofers = {
@@ -218,19 +209,19 @@ getgenv().Valve = {
     Spin360 = {
         ['Enabled'] = (true),
         ['Key'] = ("x"),
-        ['Speed'] = (1478),
+        ['Speed'] = (100), -- // 100 is max
         ['Degree'] = (360),
     },
     DetectAntiLock = { -- // Enables Resolver When Someone Use Anti Lock
         SilentAim = { -- // This Is For Silent Aim
             ['Enabled'] = true, -- // Enables Resolver Automatically When Someone Use Anti Lock
-            ['XOffset'] = (28), 
-            ['YOffset'] = (-14),
+            ['X Offset'] = (28), 
+            ['Y Offset'] = (-14),
         },
         AimAssist = {
             ['Enabled'] = (true), -- // Enables Resolver Automatically When Someone Use Anti Lock
-            ['XOffset'] = (28), 
-            ['YOffset'] = (-14),
+            ['X Offset'] = (28), 
+            ['Y Offset'] = (-14),
         },
     },
     Misc = {
@@ -238,12 +229,13 @@ getgenv().Valve = {
             ['Enabled'] = (true),
             ['Keybind'] = ("v"),
             ['Speed'] = (1),
-            ['Type'] = ("FirstPerson"), -- // "FirstPerson", "ThirdPerson"
+            ['Type'] = ("First Person"), -- // "First Person", "Third Person"
         },
         NoClip = {
             ['Enabled'] = (true),
             ['Key'] = ("t"),
-            ['PlayerWeaponName'] = ("Shotgun"),
+            ['Weapon Your Holding 1'] = ("Shotgun"),
+            ['Weapon Your Holding 2'] = ("TacticalShotgun"),
             ['Delay'] = (0.1),
         },
     },
@@ -251,12 +243,12 @@ getgenv().Valve = {
         GunFOV = {
             ['Enabled'] = (false), -- // This Uses Size FOV From Silent And AimAssist
             ['FOV'] = {
-                ['DoubleBarrel'] = (20),
+                ['Double Barrel'] = (20),
                 ['Revolver'] = (25),
                 ['Rifle'] = (20),
                 ['Shotgun'] = (20),
                 ['Smg'] = (23),
-                ['TacticalShotgun'] = (24),
+                ['Tactical Shotgun'] = (24),
                 ['Silencer'] = (17),
                 ['AK47'] = (8),
                 ['AR'] = (15),
@@ -265,34 +257,34 @@ getgenv().Valve = {
         RangeFov = { -- // Range FOV
         ["Enabled"] = (false),
         ['FOV'] = {
-            ["CloseDetection"] = (14),
-            ["CloseRangeFOV"] = (20),
-            ["MediumDetection"] = (34), 
-            ["MediumRangeFOV"] = (14),
-            ["FarDetection"] = (math.huge), -- // Dont Touch
-            ["FarRangeFOV"] = (47),        
+            ["Close Detection"] = (14),
+            ["Close Range FOV"] = (20),
+            ["Medium Detection"] = (34), 
+            ["Medium Range FOV"] = (14),
+            ["Far Detection"] = (math.huge), -- // Dont Touch
+            ["Far Range FOV"] = (47),        
             },
         },
         RangePrediction = { -- // Make Different Fov And Prediction By Range
             ["Enabled"] = (false),
             ['FOV'] = {
-                ["Close_Detection"] = (20),
-                ["Close_Prediction"] = (0.124),
-                ["Medium_Detection"] = (40), 
-                ["Medium_Prediction"] = (0.127),
-                ["Far_Detection"] = (math.huge), -- // Dont Touch
-                ["Far_Prediction"] = (0.121),
+                ["Close Detection"] = (20),
+                ["Close Prediction"] = (0.124),
+                ["Medium Detection"] = (40), 
+                ["Medium Prediction"] = (0.127),
+                ["Far Detection"] = (math.huge), -- // Dont Touch
+                ["Far Prediction"] = (0.121),
             },
         },
         GunPrediction = {
             ['Enabled'] = (false), -- // Gun Prediction This Uses Silent Aim Prediction
             ['FOV'] = {
-                ['DoubleBarrel'] = (0.125),
+                ['Double Barrel'] = (0.125),
                 ['Revolver'] = (0.127),
                 ['Rifle'] = (0.115),
                 ['Shotgun'] = (0.134),
                 ['Smg'] = (0.117),
-                ['TacticalShotgun'] = (0.127),
+                ['Tactical Shotgun'] = (0.127),
                 ['Silencer'] = (0.131),
                 ['AK47'] = (0.121),
                 ['AR'] = (0.122),
@@ -301,24 +293,19 @@ getgenv().Valve = {
     },
     ChatCommands = { -- // WIP
         ['Enabled'] = (false), -- // This Is WIP
-        ['Prefix'] = ("#"), -- // This Is Prefix Example Right Now Its # So I Use # Prefix
-        ['Commands'] = { 
-            ['SilentAim'] = ("SilentAim"), -- // Example #SilentAim on #SilentAim off
-            ['AimAssist'] = ("AimAssist"), -- // Example #AimAssist on #AimAssist off
-            ['SilentAimFOV'] = ("SFOV"), -- //  Example #SFOV on #SFOV off
-            ['AimAssistFOV'] = ("AFOV"), -- // Example #AFOV on #AFOV off
-            ['SilentAimFOVAmount'] = ("SFAmount"), -- // Example #SFAmount on #SFAmount off
-            ['AimAssistFOVAmount'] = ("AFAmount"), -- // Example #AFAmount on #AFAmount off
-            ['SilentAimResolver'] = ("SResolver"), -- // Example #SResolver on #SResolver off
-            ['AimAssistResolver'] = ("AResolver"), -- // Example #AResolver on #AResolver off
-        },
+        ['SilentAim'] = ("/SilentAim"), -- // Example /SilentAim true /SilentAim false
+        ['AimAssist'] = ("!AimAssist"), -- // Example !AimAssist true !AimAssist false
+        ['SilentAim FOV'] = ("/SFOV"), -- //  Example /SFOV true /SFOV false
+        ['AimAssist FOV'] = ("!AFOV"), -- // Example !AFOV true !AFOV false
+        ['SilentAim FOV Amount'] = ("/SFAmount"), -- // Example /SFAmount true /SFAmount false
+        ['AimAssist FOV Amount'] = ("!AFAmount"), -- // Example!AFAmount true !AFAmount false
+        ['SilentAim Resolver'] = ("/SResolver"), -- // Example /SResolver true /SResolver false
+        ['AimAssist Resolver'] = ("!AResolver"), -- // Example !AResolver true !AResolver false
     },
     AutoPrediction = { -- // AutoPrediction
-        ['CustomAutoPrediction'] = (true), -- // This Uses Custom Auto Prediction
-        ['ValveAutoPrediction'] = (false), -- // Uses Our Own Auto Prediction
-        ['AutoType'] = ("SilentAim"), -- // SilentAim And AimAssist
-        ['RefreshRate'] = (0.1), -- // How Fast Prediction Changes
-        ['CustomAutoPredictionSettings'] = {
+        ['Enabled'] = (true), -- // This Uses Custom Auto Prediction
+        ['Auto Matic Prediction'] = (false), -- // Automatically Gives You Best Settings
+        ['Prediction Change Speed'] = (0.1), -- // How Fast Prediction Changes
             ['Ping10'] = (0.10),
             ['Ping20'] = (0.11),
             ['Ping30'] = (0.12),
@@ -357,5 +344,4 @@ getgenv().Valve = {
             ['Ping360'] = (0.202),
             ['Ping400'] = (0.224),
         },
-    },
-}
+},
