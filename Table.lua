@@ -37,8 +37,8 @@ getgenv().Valve = {
     SafeMode = {
         AntiGround = { -- // If You Hit Ground Shots Then Enable This
             ["AntiGroundShots"] = (false),
-            ["AntiGroundValue"] = (0.7),
-            ["FallValue"] = (-15),
+            ["FallVelocity"] = (-15), -- // Basically Changes The Prediction Velocity To That When They Fall
+            ["RangeToGround"] = (0.7), -- // The Range Studs To Change The Velocity
         },
         Mod = {
             ['Kick_When_Mod_Joins'] = (true),
