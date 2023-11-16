@@ -11,27 +11,45 @@ We dont take user logs only hwid and key and discord user
 # Features
 
 Valve currently has over 150+ features and is getting updated daily
+
 0 fps drops ( Instead of dropping fps it makes your fps better )
+
 Uwp Optimizer ( Makes roblox Stay as web )
+
 Resolver ( Hits shots )
+
 Anti aimviewer ( Bypasses aimviewer )
+
 Nearest part & Nearest point ( 16 hitparts & all hitparts )
+
 Checks ( Example Wall, Crew, Grabbed, Knocked, & More )
+
 Memory & Network receive spoofer ( Spoofs memory & Network receive )
+
 Fake macro & Fake noclip ( OP fake macro & Fake noclip )
+
 Gun fov & Range fov ( Fov on specific guns & Fov on specific range )
+
 Auto prediction ( Prediction on ping customizable & Also comes with automatic mode gives you best prediction for your ping )
+
 Chat ( Example !Fov 50 you get that fov )
+
 And other features
 
 # Pricings
 
 500 Robux = lifetime
+
 5$ Paypal = lifetime
+
 5$ Cashapp = lifetime
+
 1 Boost = 7 Days
+
 2 Boost = 30 Days
+
 10 Invites = lifetime ( LIMITED OFFER )
+
 More invites whitelist rewards in the server
 
 # Contact
