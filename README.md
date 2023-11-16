@@ -38,6 +38,18 @@ Chat ( Example !Fov 50 you get that fov )
 
 And other features
 
+# Game Support
+
+Da hood & Also vc
+
+Hood custom & Also vc 
+
+Hood modded & Also vc
+
+Untilted hood & Also vc
+
+Basically supports all hood type games with same mechanic & same guns
+
 # Pricings
 
 500 Robux = lifetime
